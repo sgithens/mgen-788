@@ -270,14 +270,13 @@ Harvest discussion forums. \cite{harvest-nosql-discussion}
 
 \subsection{Conclusion}
 
-Based on the criteria above, it's likely we will be using various Harvest 
-subprojects, along with a set of utlity scripts to bootstrap querying and 
-retrieval of our current non-sequence data and to interface with our sequence
-data as it is added to our sample data.  Additionally, performance testing 
-against the NGS data and it's storage engines will be done in an iterative 
-fashion as more and more data becomes available to the bank.
-
-
+Based on the criteria above, there is a strong case to prototype future tissue
+bank data interfaces using the Harvest framework.  We believe that when used
+in conjunction with other local data management scripts and utilities it holds
+promise for harmonizing access to both NSG sequence and other annotation 
+information associated with physical samples.  Additionally, performance 
+testing and exploration of companion relational and NoSQL datastores should be
+further investigated as the amount of data increases.
 
 \bibliographystyle{abbrvnat}
 
@@ -286,7 +285,7 @@ fashion as more and more data becomes available to the bank.
 \begin{thebibliography}{}
 \softraggedright
 
-\vfill\eject
+%\vfill\eject
 
 \bibitem{komen-tissue-bank}
 Komen Tissue Bank at the IU Simon Cancer Center, \url{http://komentissuebank.iu.edu/}
@@ -309,6 +308,16 @@ Django Legacy DB Documentation, \url{https://docs.djangoproject.com/en/1.6/howto
 
 \bibitem{modeltree}
 ModelTree, Dynamic QuerySet Generation without joins, \url{http://modeltree.harvest.io/}
+
+\bibitem{harvest-demo}
+Harvest Demo using OpenMRS Medical Data, \url{http://harvest.research.chop.edu/demo/}
+
+\bibitem{harvest-nosql-discussion}
+Harvest 3.0: Document stores, continuous indexing, backends,
+\url{https://groups.google.com/forum/#!topic/harveststack/bsd69roEYlg}
+
+\bibitem{vcf-format}
+VCF Reference, \url{http://vcftools.sourceforge.net/VCF-poster.pdf}
 
 \end{thebibliography}
 
